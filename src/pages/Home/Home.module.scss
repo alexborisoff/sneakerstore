@@ -1,0 +1,66 @@
+.main {
+    border-radius: 0px 0px 10px 10px;
+    margin-left: 50px;
+    padding: 40px 0;
+    width: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 1px 3px black, -0.3em 0 0.4em black;
+
+    .image_slider {
+        max-width: 1050px;
+        width: 100%;
+        aspect-ratio: 6/2;
+        margin: 0 auto;
+    }
+
+    .catalog {
+        display: flex;
+        padding: 10px 30px;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .card {
+            margin: 10px 20px;
+            border: 1px solid black;
+            border-radius: 10px 10px 0px 0px;
+            width: 300px;
+            max-height: 377px;
+
+            &:hover {
+                scale: (1.03);
+                cursor: pointer;
+            }
+
+            img {
+                height: 300px;
+            }
+
+            .product {
+                font-family: 'Courier New', Courier, monospace;
+                text-align: center;
+            }
+
+            .price {
+                font-family: Comic Sans MS, Comic Sans, cursive;
+                font-size: 14px;
+                text-align: center;
+                text-shadow: 1px 1px 10px rgb(58, 57, 57);
+            }
+
+            .color {
+                margin: 10px 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: 400;
+                font-size: 12px;
+                color: rgb(137, 137, 137);
+            }
+        }
+    }
+}

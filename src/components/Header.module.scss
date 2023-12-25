@@ -1,0 +1,59 @@
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+
+    .header_logo {
+        .logo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            .title_name {
+                font-family: 'Roboto', cursive;
+                font-size: 25px;
+                letter-spacing: 5px;
+                color: white;
+
+                &:visited {
+                    color: white;
+                }
+            }
+
+            img {
+                max-height: 45px;
+                max-width: 45px;
+            }
+        }
+    }
+
+    .navigation {
+        display: flex;
+        gap: 25px;
+    }
+}
+
+.links {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        opacity: 0.7;
+        text-shadow: 3px 1px 2px rgb(98, 143, 184);
+    }
+
+    img {
+        max-height: 25px;
+        max-width: 25px;
+    }
+}

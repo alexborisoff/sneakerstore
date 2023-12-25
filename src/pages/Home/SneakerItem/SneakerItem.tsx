@@ -1,0 +1,30 @@
+import React, { Fragment } from 'react';
+import styles from '../Home.module.scss';
+//import { ISneakers } from '../../../types/ISneakers';
+
+// Change ANY type for props
+export const SneakerItem = ({shoe}: any) => {
+    return (
+        <Fragment key={shoe.id}>
+            <div className={styles.card}>
+                <div>
+                    <img src={shoe.photo} alt="shoe" />
+                </div>
+
+                <p className={styles.product}>
+                    {shoe.brand} {shoe.name}
+                </p>
+
+                <p className={styles.price}>
+                    {new Intl.NumberFormat('en-US', {
+                        style: 'currency',
+                        currency: 'USD',
+                        currencyDisplay: 'narrowSymbol',
+                    }).format(shoe.price)}
+                </p>
+
+                <p className={styles.color}>{shoe.color}</p>
+            </div>
+        </Fragment>
+    );
+};
