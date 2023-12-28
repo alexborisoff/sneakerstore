@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/sneakerstore/static/css/main.514213a7.css",
-    "main.js": "/sneakerstore/static/js/main.932b0fd0.js",
-    "static/media/slide1.jpg": "/sneakerstore/static/media/slide1.8859828f5141f5a9ad0d.jpg",
-    "static/media/slide3.jpg": "/sneakerstore/static/media/slide3.d15b1526bdbe20b01d79.jpg",
-    "static/media/slide2.jpg": "/sneakerstore/static/media/slide2.5eb758d61692fd1a6816.jpg",
-    "static/media/karhu_fusion2.jpeg": "/sneakerstore/static/media/karhu_fusion2.6431b238b85e5bdd1adb.jpeg",
-    "static/media/kangaroos_rally_bandana.jpeg": "/sneakerstore/static/media/kangaroos_rally_bandana.cb1c47519769515816a9.jpeg",
-    "static/media/response.jpeg": "/sneakerstore/static/media/response.e6fc98b74957e447823d.jpeg",
-    "static/media/puma_mirage_sport.jpeg": "/sneakerstore/static/media/puma_mirage_sport.5b952be7c999cc257c3a.jpeg",
-    "static/media/karhu_aria_95.jpeg": "/sneakerstore/static/media/karhu_aria_95.55cbd349c18391401ae7.jpeg",
-    "static/media/adi2000.jpeg": "/sneakerstore/static/media/adi2000.c167403f75f9e47d18cc.jpeg",
-    "static/media/suede.jpeg": "/sneakerstore/static/media/suede.fc4874a96348f5c31138.jpeg",
-    "static/media/reebok_club_c.jpeg": "/sneakerstore/static/media/reebok_club_c.89fa0c80710c9434f434.jpeg",
-    "static/media/suede_black.jpeg": "/sneakerstore/static/media/suede_black.4eb2fa38652a94c08a67.jpeg",
-    "static/media/cell_venom.jpeg": "/sneakerstore/static/media/cell_venom.00a89e16e2d5975f71f1.jpeg",
-    "index.html": "/sneakerstore/index.html",
-    "main.514213a7.css.map": "/sneakerstore/static/css/main.514213a7.css.map",
-    "main.932b0fd0.js.map": "/sneakerstore/static/js/main.932b0fd0.js.map"
+    "main.css": "/static/css/main.514213a7.css",
+    "main.js": "/static/js/main.c4f7a35b.js",
+    "static/media/slide1.jpg": "/static/media/slide1.8859828f5141f5a9ad0d.jpg",
+    "static/media/slide3.jpg": "/static/media/slide3.d15b1526bdbe20b01d79.jpg",
+    "static/media/slide2.jpg": "/static/media/slide2.5eb758d61692fd1a6816.jpg",
+    "static/media/karhu_fusion2.jpeg": "/static/media/karhu_fusion2.6431b238b85e5bdd1adb.jpeg",
+    "static/media/kangaroos_rally_bandana.jpeg": "/static/media/kangaroos_rally_bandana.cb1c47519769515816a9.jpeg",
+    "static/media/response.jpeg": "/static/media/response.e6fc98b74957e447823d.jpeg",
+    "static/media/puma_mirage_sport.jpeg": "/static/media/puma_mirage_sport.5b952be7c999cc257c3a.jpeg",
+    "static/media/karhu_aria_95.jpeg": "/static/media/karhu_aria_95.55cbd349c18391401ae7.jpeg",
+    "static/media/adi2000.jpeg": "/static/media/adi2000.c167403f75f9e47d18cc.jpeg",
+    "static/media/suede.jpeg": "/static/media/suede.fc4874a96348f5c31138.jpeg",
+    "static/media/reebok_club_c.jpeg": "/static/media/reebok_club_c.89fa0c80710c9434f434.jpeg",
+    "static/media/suede_black.jpeg": "/static/media/suede_black.4eb2fa38652a94c08a67.jpeg",
+    "static/media/cell_venom.jpeg": "/static/media/cell_venom.00a89e16e2d5975f71f1.jpeg",
+    "index.html": "/index.html",
+    "main.514213a7.css.map": "/static/css/main.514213a7.css.map",
+    "main.c4f7a35b.js.map": "/static/js/main.c4f7a35b.js.map"
   },
   "entrypoints": [
     "static/css/main.514213a7.css",
-    "static/js/main.932b0fd0.js"
+    "static/js/main.c4f7a35b.js"
   ]
 }
