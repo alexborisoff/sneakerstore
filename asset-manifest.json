@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/sneakers_store.github.io/static/css/main.514213a7.css",
+    "main.js": "/sneakers_store.github.io/static/js/main.f849be17.js",
+    "static/media/slide1.jpg": "/sneakers_store.github.io/static/media/slide1.8859828f5141f5a9ad0d.jpg",
+    "static/media/slide3.jpg": "/sneakers_store.github.io/static/media/slide3.d15b1526bdbe20b01d79.jpg",
+    "static/media/slide2.jpg": "/sneakers_store.github.io/static/media/slide2.5eb758d61692fd1a6816.jpg",
+    "static/media/karhu_fusion2.jpeg": "/sneakers_store.github.io/static/media/karhu_fusion2.6431b238b85e5bdd1adb.jpeg",
+    "static/media/kangaroos_rally_bandana.jpeg": "/sneakers_store.github.io/static/media/kangaroos_rally_bandana.cb1c47519769515816a9.jpeg",
+    "static/media/response.jpeg": "/sneakers_store.github.io/static/media/response.e6fc98b74957e447823d.jpeg",
+    "static/media/puma_mirage_sport.jpeg": "/sneakers_store.github.io/static/media/puma_mirage_sport.5b952be7c999cc257c3a.jpeg",
+    "static/media/karhu_aria_95.jpeg": "/sneakers_store.github.io/static/media/karhu_aria_95.55cbd349c18391401ae7.jpeg",
+    "static/media/adi2000.jpeg": "/sneakers_store.github.io/static/media/adi2000.c167403f75f9e47d18cc.jpeg",
+    "static/media/suede.jpeg": "/sneakers_store.github.io/static/media/suede.fc4874a96348f5c31138.jpeg",
+    "static/media/reebok_club_c.jpeg": "/sneakers_store.github.io/static/media/reebok_club_c.89fa0c80710c9434f434.jpeg",
+    "static/media/suede_black.jpeg": "/sneakers_store.github.io/static/media/suede_black.4eb2fa38652a94c08a67.jpeg",
+    "static/media/cell_venom.jpeg": "/sneakers_store.github.io/static/media/cell_venom.00a89e16e2d5975f71f1.jpeg",
+    "index.html": "/sneakers_store.github.io/index.html",
+    "main.514213a7.css.map": "/sneakers_store.github.io/static/css/main.514213a7.css.map",
+    "main.f849be17.js.map": "/sneakers_store.github.io/static/js/main.f849be17.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.514213a7.css",
+    "static/js/main.f849be17.js"
+  ]
+}
