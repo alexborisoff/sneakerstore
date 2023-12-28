@@ -1,5 +1,5 @@
 import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './ImageSlider.module.scss';
 
 type ImageSliderProps = {
@@ -11,6 +11,15 @@ type ImageSliderProps = {
 
 export const ImageSlider = ({ images }: ImageSliderProps) => {
     const [imageIndex, setImageIndex] = useState<number>(0);
+    const showNextSlide = (): any => {
+        setImageIndex((index) => {
+            if (index === images.length - 1) return 0;
+            return index + 1;
+        });
+    };
+    useEffect(() => {
+        setTimeout(() => showNextSlide(), 3000);
+    });
 
     const showPrevSlide = () => {
         setImageIndex((index) => {
@@ -19,15 +28,8 @@ export const ImageSlider = ({ images }: ImageSliderProps) => {
         });
     };
 
-    const showNextSlide = () => {
-        setImageIndex((index) => {
-            if (index === images.length - 1) return 0;
-            return index + 1;
-        });
-    };
-
     return (
-        <section aria-label='Image Slider' className={styles.slider}>
+        <section aria-label="Image Slider" className={styles.slider}>
             <div className={styles.slider_options}>
                 {images.map(({ url, alt }, index) => (
                     <img
