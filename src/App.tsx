@@ -7,6 +7,7 @@ import { Contacts } from './pages/Contacts';
 import { Cart } from './pages/Cart';
 import { Header } from './components/Header';
 import { Blog } from './pages/Blog';
+import { Footer } from './components/Footer';
 import './styles/app.css';
 
 export const App = () => {
@@ -22,6 +23,7 @@ export const App = () => {
                 <Route path="/contacts" element={<Contacts />} />
                 <Route path="/cart" element={<Cart />} />
             </Routes>
+            <Footer />
         </div>
     );
 };

@@ -1,0 +1,20 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(23, 23, 23, 0.95);
+    margin-top: 2rem;
+    color: white;
+    padding: 1rem 1rem;
+    font-family: 'Courier New', Courier, monospace;
+
+    a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            color: rgb(181, 176, 176);
+        }
+    }
+}

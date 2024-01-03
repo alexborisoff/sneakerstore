@@ -3,10 +3,20 @@ import styles from '../Home.module.scss';
 //import { ISneakers } from '../../../types/ISneakers';
 
 // Change ANY type for props
-export const SneakerItem = ({shoe}: any) => {
+export const SneakerItem = ({ shoe }: any) => {
     return (
         <Fragment key={shoe.id}>
             <div className={styles.card}>
+                {shoe.sale === true && (
+                    <div>
+                        <img className={styles.sale} src="./sale96.png" alt="sale" />
+                    </div>
+                )}
+                {shoe.new === true && (
+                    <div>
+                        <img className={styles.new} src="./new96.png" alt="new" />
+                    </div>
+                )}
                 <div>
                     <img src={shoe.photo} alt="shoe" />
                 </div>
