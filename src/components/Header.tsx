@@ -33,6 +33,10 @@ export const Header = () => {
                 </Link>
             </nav>
 
+            <div className={styles.call_us}>
+                <input type="button" value="Call Us"/>
+            </div>
+
             <div>
                 <Link className={styles.links} to="/cart">
                     <div className={styles}>

@@ -30,6 +30,7 @@ export const SneakerItem = ({ shoe }: any) => {
                         style: 'currency',
                         currency: 'USD',
                         currencyDisplay: 'narrowSymbol',
+                        maximumSignificantDigits: 5,
                     }).format(shoe.price)}
                 </p>
 
