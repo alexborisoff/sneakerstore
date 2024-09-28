@@ -10,7 +10,7 @@ import karhu_fusion2 from '../../assets/images/sneakers/karhu/karhu_fusion2.jpeg
 import puma_mirage_sport from '../../assets/images/sneakers/puma/puma_mirage_sport.jpeg';
 import reebok_club_c from '../../assets/images/sneakers/reebok/reebok_club_c.jpeg';
 
-export const sneakers: ISneakers[] = [
+export const sneakers: ISneakers[]  = [
     {
         id: 1,
         brand: 'Adidas',
