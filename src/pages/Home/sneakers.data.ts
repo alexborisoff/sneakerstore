@@ -9,8 +9,11 @@ import karhu_aria_95 from '../../assets/images/sneakers/karhu/karhu_aria_95.jpeg
 import karhu_fusion2 from '../../assets/images/sneakers/karhu/karhu_fusion2.jpeg';
 import puma_mirage_sport from '../../assets/images/sneakers/puma/puma_mirage_sport.jpeg';
 import reebok_club_c from '../../assets/images/sneakers/reebok/reebok_club_c.jpeg';
+import ca_pro from '../../assets/images/sneakers/puma/ca_pro.jpg';
+import desierto_v3 from '../../assets/images/sneakers/puma/desierto_v3.jpg';
+import samba_xlg from '../../assets/images/sneakers/adidas/samba_xlg.jpg';
 
-export const sneakers: ISneakers[]  = [
+export const sneakers: ISneakers[] = [
     {
         id: 1,
         brand: 'Adidas',
@@ -96,5 +99,29 @@ export const sneakers: ISneakers[]  = [
         name: 'Club C',
         price: 110,
         color: 'White',
+    },
+    {
+        id: 11,
+        brand: 'Puma',
+        photo: ca_pro,
+        name: 'Ca Pro EMBD',
+        price: 115.5,
+        color: 'White/Red',
+    },
+    {
+        id: 12,
+        brand: 'Puma',
+        photo: desierto_v3,
+        name: 'Desierto V3',
+        price: 125,
+        color: 'Gray',
+    },
+    {
+        id: 13,
+        brand: 'Adidas',
+        photo: samba_xlg,
+        name: 'Originals Samba XLG',
+        price: 100,
+        color: 'Black/White',
     },
 ];
