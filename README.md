@@ -1,3 +1,5 @@
+# React v.18 + TypeScript + Webpack + SCSS Modules
+
 Hi, visitor to my GitHub account.
 
 My name is Alex and in my free time I prefer to program and immerse myself
@@ -7,4 +9,3 @@ This application displays the operation of an online store selling branded sneak
 
 To run the application, open the project in any of the source-code editors (e.g. Visual Studio Code, WebStorm, etc.). Then type the NPM RUN START command in the terminal of one of the above editors to start the project.
 
-This project is also deployed on GitHub Pages.
