@@ -1,5 +1,3 @@
-import { ISneakers } from '../../types/ISneakers';
-
 import { ArrowBigLeft, ArrowBigRight } from 'lucide-react';
 import { ImageSlider } from '../../components/Home/ImageSlider';
 import { sneakers } from './sneakers.data';
