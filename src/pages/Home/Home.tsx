@@ -1,6 +1,6 @@
 import { ArrowBigLeft, ArrowBigRight } from 'lucide-react';
-import { ImageSlider } from '../../components/Home/ImageSlider';
-import { sneakers } from './sneakers.data';
+import { ImageSlider } from '../../components/Home/ImageSlider/ImageSlider';
+// import { sneakers } from './sneakers.data';
 import styles from './Home.module.scss';
 import { SneakerItem } from './SneakerItem/SneakerItem';
 import usePagination from '../../hooks/usePagination';
@@ -8,8 +8,20 @@ import usePagination from '../../hooks/usePagination';
 import slide1 from '../../assets/images/slider_images/slide1.jpg';
 import slide2 from '../../assets/images/slider_images/slide2.jpg';
 import slide3 from '../../assets/images/slider_images/slide3.jpg';
+import { useEffect, useState } from 'react';
+import { ISneakers } from '../../types/ISneakers';
 
 export const Home = () => {
+    const [listSneakers, setListSneakers] = useState<ISneakers[]>([]);
+
+    useEffect(() => {
+        fetch('http://localhost:3001/sneakers')
+            .then((res) => res.json())
+            .then((data) => {
+                setListSneakers(data);
+            });
+    }, []);
+
     const IMAGES = [
         { url: slide1, alt: 'First Slide' },
         { url: slide2, alt: 'Second Slide' },
@@ -19,7 +31,7 @@ export const Home = () => {
     // usePagination hook
     const { firstContentIndex, lastContentIndex, nextPage, prevPage, page, totalPages } = usePagination({
         contentPerPage: 6,
-        count: sneakers.length,
+        count: listSneakers.length,
     });
 
     /* const filtredSneakers = useMemo(
@@ -43,10 +55,10 @@ export const Home = () => {
             </section>
 
             <section className={styles.catalog}>
-                {sneakers.length ? (
-                    sneakers
+                {listSneakers.length ? (
+                    listSneakers
                         .slice(firstContentIndex, lastContentIndex)
-                        .map((shoe) => <SneakerItem key={shoe.id} shoe={shoe} />)
+                        .map((sneaker) => <SneakerItem key={sneaker.id} shoe={sneaker} />)
                 ) : (
                     <p> {`Sorry, we don't have any sneakers :(`} </p>
                 )}
@@ -58,11 +70,11 @@ export const Home = () => {
                 </p>
                 <div className={styles.flex}>
                     <div className={styles.page} onClick={prevPage}>
-                        <ArrowBigLeft aria-label='Previous picture' />
+                        <ArrowBigLeft aria-label="Previous picture" />
                     </div>
 
                     <div className={styles.page} onClick={nextPage}>
-                        <ArrowBigRight aria-label='Next picture'/>
+                        <ArrowBigRight aria-label="Next picture" />
                     </div>
                 </div>
             </section>
