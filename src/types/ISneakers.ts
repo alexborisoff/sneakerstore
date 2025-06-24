@@ -6,5 +6,6 @@ export interface ISneakers {
     price: number;
     color: string;
     sale?: boolean;
+    sale_price?: number,
     new?: boolean;
 }
