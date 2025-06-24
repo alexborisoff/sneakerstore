@@ -21,6 +21,7 @@
     },
     "scripts": {
         "start": "react-scripts start",
+        "api": "npx json-server --watch db.json --port 3001",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build",
         "build": "react-scripts build"
