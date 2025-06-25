@@ -13,12 +13,18 @@ import { ISneakers } from '../../types/ISneakers';
 
 export const Home = () => {
     const [listSneakers, setListSneakers] = useState<ISneakers[]>([]);
+    const [loading, setLoading] = useState<boolean>(true);
 
     useEffect(() => {
         fetch('http://localhost:3001/sneakers')
             .then((res) => res.json())
             .then((data) => {
                 setListSneakers(data);
+                setLoading(false);
+            })
+            .catch((err) => {
+                console.error("Loading error:", err);
+                setLoading(false);
             });
     }, []);
 
@@ -60,7 +66,7 @@ export const Home = () => {
                         .slice(firstContentIndex, lastContentIndex)
                         .map((sneaker) => <SneakerItem key={sneaker.id} shoe={sneaker} />)
                 ) : (
-                    <p> {`Sorry, we don't have any sneakers :(`} </p>
+                    <p> {'Sorry we do not have any sneaker'} </p>
                 )}
             </section>
 
