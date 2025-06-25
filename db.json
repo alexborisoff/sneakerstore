@@ -3,7 +3,7 @@
         {
             "id": 1,
             "brand": "Adidas",
-            "photo": "/assets/images/sneakers/adidas/response.jpeg",
+            "photo": "response.jpeg",
             "name": "Originals Response",
             "price": 200,
             "color": "Olive",
@@ -12,26 +12,28 @@
         {
             "id": 2,
             "brand": "Puma",
-            "photo": "cell_venom",
+            "photo": "cell_venom.jpeg",
             "name": "Cell Venom",
             "price": 127.99,
             "color": "Blue/White",
-            "sale": true
+            "sale": true,
+            "sale_price": 120
         },
         {
             "id": 3,
             "brand": "Adidas",
-            "photo": "adi",
+            "photo": "adi2000.jpeg",
             "name": "ADI2000",
             "price": 300,
             "color": "Blue",
             "sale": true,
+            "sale_price": 279,
             "new": true
         },
         {
             "id": 4,
             "brand": "Puma",
-            "photo": "puma",
+            "photo": "suede.jpeg",
             "name": "Suede",
             "price": 120,
             "color": "Red"
@@ -39,7 +41,7 @@
         {
             "id": 5,
             "brand": "Puma",
-            "photo": "suede_black",
+            "photo": "suede_black.jpeg",
             "name": "Suede",
             "price": 140,
             "color": "Black"
@@ -47,16 +49,17 @@
         {
             "id": 6,
             "brand": "KangaRoos",
-            "photo": "kangaroos_rally_bandana",
+            "photo": "kangaroos_rally_bandana.jpeg",
             "name": "Rally Bandana",
             "price": 175.5,
             "color": "Green",
-            "sale": true
+            "sale": true,
+            "sale_price": 150
         },
         {
             "id": 7,
             "brand": "Karhu",
-            "photo": "karhu_aria_95",
+            "photo": "karhu_aria_95.jpeg",
             "name": "Aria 95",
             "price": 213,
             "color": "White/Pink"
@@ -64,7 +67,7 @@
         {
             "id": 8,
             "brand": "Karhu",
-            "photo": "karhu_fusion2",
+            "photo": "karhu_fusion2.jpeg",
             "name": "Fusion 2",
             "price": 199,
             "color": "Red"
@@ -72,16 +75,17 @@
         {
             "id": 9,
             "brand": "Puma",
-            "photo": "puma_mirage_sport",
+            "photo": "puma_mirage_sport.jpeg",
             "name": "Mirage Sport",
             "price": 150.99,
             "color": "Olive/Yellow",
-            "sale": true
+            "sale": true,
+            "sale_price": 140.75
         },
         {
             "id": 10,
             "brand": "Reebok",
-            "photo": "reebok_club_c",
+            "photo": "reebok_club_c.jpeg",
             "name": "Club C",
             "price": 110,
             "color": "White"
@@ -89,7 +93,7 @@
         {
             "id": 11,
             "brand": "Puma",
-            "photo": "ca_pro",
+            "photo": "ca_pro.jpg",
             "name": "Ca Pro EMBD",
             "price": 115.5,
             "color": "White/Red"
@@ -97,7 +101,7 @@
         {
             "id": 12,
             "brand": "Puma",
-            "photo": "desierto_v3",
+            "photo": "desierto_v3.jpg",
             "name": "Desierto V3",
             "price": 125,
             "color": "Gray"
@@ -105,7 +109,7 @@
         {
             "id": 13,
             "brand": "Adidas",
-            "photo": "samba_xlg",
+            "photo": "samba_xlg.jpg",
             "name": "Originals Samba XLG",
             "price": 100,
             "color": "Black/White"
