@@ -1,9 +1,9 @@
 import { ArrowBigLeft, ArrowBigRight } from 'lucide-react';
 import { ImageSlider } from '../../components/Home/ImageSlider/ImageSlider';
-// import { sneakers } from './sneakers.data';
 import styles from './Home.module.scss';
 import { SneakerItem } from './SneakerItem/SneakerItem';
 import usePagination from '../../hooks/usePagination';
+import { Loader } from '../../components/ui/Loader';
 
 import slide1 from '../../assets/images/slider_images/slide1.jpg';
 import slide2 from '../../assets/images/slider_images/slide2.jpg';
@@ -23,7 +23,7 @@ export const Home = () => {
                 setLoading(false);
             })
             .catch((err) => {
-                console.error("Loading error:", err);
+                console.error('Loading error:', err);
                 setLoading(false);
             });
     }, []);
@@ -34,18 +34,14 @@ export const Home = () => {
         { url: slide3, alt: 'Third Slide' },
     ];
 
+    
     // usePagination hook
     const { firstContentIndex, lastContentIndex, nextPage, prevPage, page, totalPages } = usePagination({
         contentPerPage: 6,
         count: listSneakers.length,
     });
 
-    /* const filtredSneakers = useMemo(
-        () => sneakers.filter((sneaker) => sneaker.price > 150),
-        []
-    );
-     */
-
+    if (loading) return <Loader/>;
     return (
         <main className={styles.main}>
             <section className={styles.image_slider}>
