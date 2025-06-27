@@ -34,14 +34,12 @@ export const Home = () => {
         { url: slide3, alt: 'Third Slide' },
     ];
 
-    
     // usePagination hook
     const { firstContentIndex, lastContentIndex, nextPage, prevPage, page, totalPages } = usePagination({
         contentPerPage: 6,
         count: listSneakers.length,
     });
 
-    if (loading) return <Loader/>;
     return (
         <main className={styles.main}>
             <section className={styles.image_slider}>
@@ -57,6 +55,7 @@ export const Home = () => {
             </section>
 
             <section className={styles.catalog}>
+                {loading ? <Loader /> : <></>}
                 {listSneakers.length ? (
                     listSneakers
                         .slice(firstContentIndex, lastContentIndex)
